@@ -1,0 +1,13 @@
+{
+    "identifier": "cn.foreverben.mimo-tts",
+    "versions": [
+        {
+            "version": "0.1.0",
+            "desc": "首次发布，支持 9 种预置音色",
+            "sha256": "af2b8f50f4e756424ad2f75b5bb42db9d2332f9d4a8df777136eee3d77dbc127",
+            "url": "https://github.com/KeepStupidForever/mimo-tts/raw/main/mimo-tts.bobplugin",
+            "minBobVersion": "1.6.0",
+            "timestamp": 1748342400000
+        }
+    ]
+}

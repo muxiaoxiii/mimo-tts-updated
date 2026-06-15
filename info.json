@@ -1,0 +1,60 @@
+{
+    "identifier": "cn.foreverben.mimo-tts",
+    "version": "0.2.0",
+    "category": "tts",
+    "name": "小米 Mimo TTS",
+    "summary": "Xiaomi Mimo TTS 语音合成",
+    "author": "foreverben",
+    "homepage": "https://platform.xiaomimimo.com/console/api-keys",
+    "appcast": "https://github.com/KeepStupidForever/mimo-tts/raw/main/appcast.json",
+    "minBobVersion": "1.6.0",
+    "options": [
+        {
+            "identifier": "baseUrlOption",
+            "type": "menu",
+            "title": "Base URL",
+            "desc": "选择 API 端点",
+            "defaultValue": "default",
+            "menuValues": [
+                {"title": "默认 (api.xiaomimimo.com)", "value": "default"},
+                {"title": "Token Plan (token-plan-cn.xiaomimomo.com)", "value": "tokenplan"},
+                {"title": "自定义", "value": "custom"}
+            ]
+        },
+        {
+            "identifier": "customBaseUrl",
+            "type": "text",
+            "title": "自定义 Base URL",
+            "desc": "仅在选择 \\\"自定义\\\" 时生效，格式如：https://your-domain.com/v1",
+            "textConfig": {
+                "type": "visible",
+                "height": 30,
+                "placeholder": "https://your-domain.com/v1"
+            }
+        },
+        {
+            "identifier": "apiKey",
+            "type": "text",
+            "title": "API Key",
+            "desc": "默认端点用 sk-xxx 格式；Token Plan 用 tp-xxx 格式。点击 \\\"插件主页\\\" 获取"
+        },
+        {
+            "identifier": "voice",
+            "type": "menu",
+            "title": "音色",
+            "defaultValue": "mimo_default",
+            "isKeyOption": true,
+            "menuValues": [
+                {"title": "MiMo-默认 (自适应)", "value": "mimo_default", "defaultPluginName": "Mimo TTS - 默认"},
+                {"title": "冰糖 (中文 女)", "value": "冰糖", "defaultPluginName": "Mimo TTS - 冰糖"},
+                {"title": "茉莉 (中文 女)", "value": "茉莉", "defaultPluginName": "Mimo TTS - 茉莉"},
+                {"title": "苏打 (中文 男)", "value": "苏打", "defaultPluginName": "Mimo TTS - 苏打"},
+                {"title": "白桦 (中文 男)", "value": "白桦", "defaultPluginName": "Mimo TTS - 白桦"},
+                {"title": "Mia (英文 女)", "value": "Mia", "defaultPluginName": "Mimo TTS - Mia"},
+                {"title": "Chloe (英文 女)", "value": "Chloe", "defaultPluginName": "Mimo TTS - Chloe"},
+                {"title": "Milo (英文 男)", "value": "Milo", "defaultPluginName": "Mimo TTS - Milo"},
+                {"title": "Dean (英文 男)", "value": "Dean", "defaultPluginName": "Mimo TTS - Dean"}
+            ]
+        }
+    ]
+}
